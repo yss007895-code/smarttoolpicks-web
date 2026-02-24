@@ -1054,6 +1054,17 @@ export const guides: StyleGuide[] = [  {
       },
     ],
   },
+  {
+    slug: 'best-free-email-marketing-tools-2026',
+    title: "Best Free Email Marketing Tools in 2026: Zero Budget, Real Results",
+    description: "Free plans that don't cripple your campaigns. We tested the top free email marketing tools on deliverability, automation, and template quality.",
+    category: 'marketing',
+    tag: "Email",
+    readTime: "11 min read",
+    image: '/images/guides/best-free-email-marketing-tools-2026.jpg',
+    emoji: "\ud83d\udce7",
+    date: '2026-02-25',
+  },
 ];
 
 export function getGuideBySlug(slug: string) {
