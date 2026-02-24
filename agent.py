@@ -1,4 +1,5 @@
 from google import genai
+from google.genai import types
 import os
 import json
 import time
@@ -27,11 +28,11 @@ IMAGE_MODEL = "imagen-3.0-generate-001"
 
 # Auto-detect environment (Windows local vs Linux VM)
 if sys.platform == "win32":
-    WEB_ROOT = r"C:\Users\yss00\stylemedaily-web"
-    PINS_FILE = r"C:\Users\yss00\pins.txt"
-    ERROR_LOG = r"C:\Users\yss00\error_log.txt"
-    TOPICS_FILE = r"C:\Users\yss00\generated_topics.txt"
-    BACKUP_ROOT = r"C:\Users\yss00\backups"
+    WEB_ROOT = r"C:\Users\yss00\smarttoolpicks-web"
+    PINS_FILE = os.path.join(WEB_ROOT, "pins.txt")
+    ERROR_LOG = os.path.join(WEB_ROOT, "error_log.txt")
+    TOPICS_FILE = os.path.join(WEB_ROOT, "generated_topics.txt")
+    BACKUP_ROOT = os.path.join(WEB_ROOT, "backups")
 else:
     WEB_ROOT = os.path.dirname(os.path.abspath(__file__))
     PINS_FILE = os.path.join(WEB_ROOT, "pins.txt")
@@ -49,6 +50,30 @@ TWITTER_CONFIG = {
     "access_token": os.getenv("TWITTER_ACCESS_TOKEN"),
     "access_token_secret": os.getenv("TWITTER_ACCESS_TOKEN_SECRET")
 }
+
+
+def load_site_profile(site_id):
+    candidates = [
+        os.getenv("SITE_PROFILES_PATH"),
+        os.path.join(os.path.expanduser("~"), "site_profiles.json"),
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "site_profiles.json"),
+        r"C:\Users\yss00\site_profiles.json",
+    ]
+    for path in candidates:
+        if not path or not os.path.exists(path):
+            continue
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            for site in data.get("sites", []):
+                if site.get("id") == site_id:
+                    return site
+        except Exception:
+            continue
+    return {}
+
+
+SITE_PROFILE = load_site_profile("smarttoolpicks")
 
 def perform_backup():
     """Creates a timestamped backup of the project's critical files."""
@@ -132,11 +157,8 @@ def mark_topic_as_used(keyword):
 
 # Verified fallback images (all confirmed 200 OK)
 FALLBACK_IMAGES = [
-    "https://placehold.co/600x400?text=Image",
-    "https://placehold.co/600x400?text=Image",
-    "https://placehold.co/600x400?text=Image",
-    "https://placehold.co/600x400?text=Image",
-    "https://placehold.co/600x400?text=Image",
+    "/images/guides/hero-tech-premium.webp",
+    "/images/categories/ai-tools.svg",
 ]
 
 def validate_image_url(url, timeout=10):
@@ -177,38 +199,47 @@ def generate_blog_image(keyword, title):
             f"Title: '{title}'. Modern, clean aesthetic. No text overlay. "
             f"Photorealistic fashion photography style, soft lighting, 16:9 aspect ratio."
         )
-        response = gemini_client.models.generate_content(
+        response = gemini_client.models.generate_images(
             model=IMAGE_MODEL,
-            contents=img_prompt,
+            prompt=img_prompt,
+            config=types.GenerateImagesConfig(
+                number_of_images=1,
+                output_mime_type="image/jpeg",
+            ),
         )
-        # Save image if binary data returned
-        if response.candidates and response.candidates[0].content.parts:
-            for part in response.candidates[0].content.parts:
-                if hasattr(part, 'inline_data') and part.inline_data:
-                    img_dir = os.path.join(WEB_ROOT, "public", "images", "generated")
-                    os.makedirs(img_dir, exist_ok=True)
-                    slug = re.sub(r'[^a-z0-9]+', '-', keyword.lower()).strip('-')
-                    img_filename = f"{datetime.now().strftime('%Y%m%d')}_{slug}.png"
-                    img_path = os.path.join(img_dir, img_filename)
-                    with open(img_path, "wb") as f:
-                        f.write(part.inline_data.data)
-                    print(f"Image saved: {img_path}")
-                    return f"/images/generated/{img_filename}"
+        if response.generated_images:
+            img_dir = os.path.join(WEB_ROOT, "public", "images", "generated")
+            os.makedirs(img_dir, exist_ok=True)
+            slug = re.sub(r'[^a-z0-9]+', '-', keyword.lower()).strip('-')
+            img_filename = f"{datetime.now().strftime('%Y%m%d')}_{slug}.jpg"
+            img_path = os.path.join(img_dir, img_filename)
+            with open(img_path, "wb") as f:
+                f.write(response.generated_images[0].image.image_bytes)
+            print(f"Image saved: {img_path}")
+            return f"/images/generated/{img_filename}"
         print("No image data in response, using fallback")
     except Exception as e:
         print(f"Image generation failed: {e}")
-    return get_valid_image_url(FALLBACK_IMAGES[0])
+    return FALLBACK_IMAGES[0]
 
 
 def generate_targeted_blog(keyword):
     """Generates blog post and Pinterest content via Gemini (Vertex AI)."""
     print(f"\nGenerating blog content for: {keyword} (Gemini)")
+    profile_domain = SITE_PROFILE.get("domain", "smarttoolpicks.net")
+    profile_monetization = ", ".join(SITE_PROFILE.get("monetization", ["affiliate_recurring_commission"]))
+    profile_affiliate_focus = ", ".join(SITE_PROFILE.get("affiliate_focus", ["hubspot", "semrush"]))
+    profile_goal = SITE_PROFILE.get("content_goal", "tool_comparisons_with_recurring_revenue_focus")
 
     blog_prompt = f"""
     You are a tech-savvy product reviewer who runs SmartToolPicks. You test SaaS tools, productivity apps, and tech gear hands-on before recommending them. You explain complex tech in plain English. You are NOT an AI. Write like a real tech reviewer sharing genuine experience.
 
     Topic: {keyword}
     Site: SmartToolPicks
+    Domain: {profile_domain}
+    Monetization: {profile_monetization}
+    Affiliate Focus: {profile_affiliate_focus}
+    Content Goal: {profile_goal}
     Target: US startup founders, freelancers, small business owners, productivity enthusiasts
 
     === BANNED PHRASES (absolutely never use) ===
@@ -259,7 +290,9 @@ def generate_targeted_blog(keyword):
     === CONTENT ===
     - Intro: Start with a real problem this tool solves, a surprising comparison, or a workflow pain point. NEVER generic.
     - Body: 3-4 sections covering hands-on experience, key features, pricing breakdown, who it's best for
-    - Products: "Top Picks" with 4-5 tool recommendations (names + honest pros/cons, no links)
+    - Products: "Top Picks" with 4-5 tool recommendations.
+      Use exact product naming users search for (example: "HubSpot Marketing Hub Professional", "Semrush Guru").
+      Product names in section headings/captions must match exactly (no generic naming).
     - Closing: Clear recommendation with specific use-case advice
 
     Return ONLY a valid JSON object (no markdown fences):
