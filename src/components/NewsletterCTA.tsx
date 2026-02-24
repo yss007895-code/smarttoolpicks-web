@@ -6,8 +6,7 @@ export default function NewsletterCTA() {
         SaaS reviews, software deals, and productivity tips delivered every Thursday.
       </p>
       <div className="max-w-md mx-auto">
-        <p className="text-sm text-blue-500 font-medium">Coming soon</p>
-        <p className="text-xs text-gray-400 mt-2">Subscribe feature launching shortly.</p>
+        <a href="https://smarttoolpicks.substack.com" target="_blank" rel="noopener noreferrer" className="inline-block bg-indigo-600 text-white text-sm font-semibold px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors">Subscribe Free</a>
       </div>
       <p className="text-[11px] text-gray-400 mt-3">No spam. Unsubscribe anytime.</p>
     </div>

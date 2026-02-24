@@ -12,10 +12,10 @@ export default function HomePage() {
   const editorPicks = guides.slice(0, 3);
 
   const featuredGuides = [
-    { title: 'Best Project Management Tools 2026', image: '/images/guides/guide-pm-tools.webp', url: '/guides/best-project-management-software-agile-teams-2024' },
-    { title: 'Top CRM Software Compared', image: '/images/guides/guide-crm.webp', url: '/guides/the-best-crm-for-small-business-boost-sales-customer-growth' },
-    { title: 'No-Code AI Tools Guide', image: '/images/guides/guide-no-code.webp', url: '/guides/the-rise-of-no-code-ai-tools-build-automate-without-code' },
-    { title: 'Best Design Tools 2026', image: '/images/guides/guide-design-tools.webp', url: '/guides/essential-design-software-ui-ux-professionals-beginners' },
+    { title: 'Best Project Management Tools 2026', image: '/images/guides/guide-pm-tools.webp', url: '/guides/best-project-management-tools-2026' },
+    { title: 'Top CRM Software Compared', image: '/images/guides/guide-crm.webp', url: '/guides/best-crm-software-small-business-2026' },
+    { title: 'Best AI Writing Assistants 2026', image: '/images/guides/guide-no-code.webp', url: '/guides/best-ai-writing-assistants-2026' },
+    { title: 'Best Video Editing Software 2026', image: '/images/guides/guide-design-tools.webp', url: '/guides/best-video-editing-software-2026' },
   ];
 
   const organizationJsonLd = {
