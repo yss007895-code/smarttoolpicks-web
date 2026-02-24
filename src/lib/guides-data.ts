@@ -21,12 +21,12 @@ export interface AffiliateProduct {
 }
 
 export const categories = [
-  { slug: 'all', name: 'All', icon: '?? },
-  { slug: 'productivity', name: 'Productivity', icon: '?? },
-  { slug: 'ai-tools', name: 'AI Tools', icon: '?쨼' },
-  { slug: 'marketing', name: 'Marketing', icon: '?뱢' },
-  { slug: 'development', name: 'Development', icon: '?뮲' },
-  { slug: 'hardware', name: 'Hardware & Gear', icon: '?⑨툘' },
+  { slug: 'all', name: 'All', icon: '🔧' },
+  { slug: 'productivity', name: 'Productivity', icon: '⚡' },
+  { slug: 'ai-tools', name: 'AI Tools', icon: '🤖' },
+  { slug: 'marketing', name: 'Marketing', icon: '📣' },
+  { slug: 'development', name: 'Development', icon: '💻' },
+  { slug: 'hardware', name: 'Hardware & Gear', icon: '🔧' },
 ];
 
 export const guides: StyleGuide[] = [  {
@@ -180,6 +180,23 @@ export const guides: StyleGuide[] = [  {
       { name: 'Notion', brand: 'Notion', price: '$10/mo', url: 'https://amzn.to/example', tag: 'Best for Teams', image: '/images/guides/best-note-taking-apps-productivity-2026-prod1.jpg' },
       { name: 'Obsidian', brand: 'Obsidian', price: '$8/mo', url: 'https://amzn.to/example', tag: 'Best for Power Users', image: '/images/guides/best-note-taking-apps-productivity-2026-prod2.jpg' },
       { name: 'Microsoft OneNote', brand: 'Microsoft', price: '$0/mo', url: 'https://amzn.to/example', tag: 'Best Free Option', image: '/images/guides/best-note-taking-apps-productivity-2026-prod3.jpg' },
+    ],
+  },
+  {
+    slug: 'best-portable-charger-2026',
+    title: 'The 4 Best Portable Chargers of 2026 (Tested: Real mAh, Speed & Build Quality)',
+    category: 'hardware',
+    description: 'Marketing claims versus real performance. We tested portable chargers for actual capacity, laptop charging speed, and dual-port behavior. Four picks that deliver.',
+    readTime: '9 min',
+    date: '2026-02-24',
+    tag: 'Guide',
+    emoji: '⚡',
+    image: '/images/guides/best-portable-charger-2026-hero.jpg',
+    affiliateProducts: [
+      { name: 'Anker 737 Power Bank 24000mAh 140W', brand: 'Anker', price: '$109', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/best-portable-charger-2026-prod0.jpg' },
+      { name: 'Baseus Blade 2 20000mAh 65W', brand: 'Baseus', price: '$59', url: 'https://amzn.to/example', tag: 'Best for Laptop Users', image: '/images/guides/best-portable-charger-2026-prod1.jpg' },
+      { name: 'Zendure SuperMini 10000mAh 45W', brand: 'Zendure', price: '$44', url: 'https://amzn.to/example', tag: 'Best for Travel Light', image: '/images/guides/best-portable-charger-2026-prod2.jpg' },
+      { name: 'INIU 27000mAh 65W Power Bank', brand: 'INIU', price: '$49', url: 'https://amzn.to/example', tag: 'Best Budget Capacity', image: '/images/guides/best-portable-charger-2026-prod3.jpg' },
     ],
   },
 ];
