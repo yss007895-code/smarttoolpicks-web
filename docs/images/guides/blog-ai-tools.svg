@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><defs><linearGradient id="g-blog-ai-tools" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#187484"/><stop offset="100%" stop-color="#00b6cf"/></linearGradient></defs><rect width="600" height="400" rx="20" fill="url(#g-blog-ai-tools)"/><circle cx="133" cy="210" r="93" fill="#CFFAFE" opacity="0.08"/>
+  <text x="300" y="184" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="28" font-weight="700" fill="#CFFAFE">AI vs</text>
+  <text x="300" y="218" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="28" font-weight="700" fill="#CFFAFE">Traditional SaaS</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="bg-adobe-photoshop" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(35)">
+      <stop offset="0%" stop-color="#4c30b8"/>
+      <stop offset="100%" stop-color="#874de7"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="16" fill="url(#bg-adobe-photoshop)"/>
+  <circle cx="100" cy="85" r="42" fill="#EDE9FE" opacity="0.15"/>
+  <text x="100" y="95" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="36" font-weight="700" fill="#EDE9FE">Ps</text>
+  <text x="100" y="135" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="500" fill="#EDE9FE" opacity="0.9">Adobe Photoshop</text>
+</svg>

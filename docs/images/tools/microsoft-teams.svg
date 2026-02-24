@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="bg-microsoft-teams" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(62)">
+      <stop offset="0%" stop-color="#ab0f5b"/>
+      <stop offset="100%" stop-color="#e64699"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="16" fill="url(#bg-microsoft-teams)"/>
+  <circle cx="100" cy="85" r="42" fill="#FCE7F3" opacity="0.15"/>
+  <text x="100" y="95" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="36" font-weight="700" fill="#FCE7F3">T</text>
+  <text x="100" y="135" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="500" fill="#FCE7F3" opacity="0.9">Microsoft Teams</text>
+</svg>
