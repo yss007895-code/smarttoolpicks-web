@@ -251,9 +251,9 @@ export default function SlackVsMicrosoftTeams() {
         </div>
 
         <div className="my-6">
-          <Link href="/guides/top-crm-software-compared" className="card-hover p-4 flex items-center gap-4 group">
+          <Link href="/guides/best-crm-software-small-business-2026" className="card-hover p-4 flex items-center gap-4 group">
             <div className="flex-1">
-              <p className="font-semibold text-sm text-gray-800 group-hover:text-gray-600 transition-colors">Top CRM Software Compared — Full Rankings</p>
+              <p className="font-semibold text-sm text-gray-800 group-hover:text-gray-600 transition-colors">Best CRM Software for Small Business 2026 — Full Rankings</p>
               <p className="text-xs text-gray-400 mt-1">HubSpot, Salesforce, Pipedrive and more compared</p>
             </div>
             <span className="text-gray-400 text-sm">Read guide</span>
