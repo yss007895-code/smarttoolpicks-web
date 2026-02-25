@@ -1,8 +1,20 @@
 import type { Metadata } from 'next';
+import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Contact Us -- Partnerships & Inquiries',
   description: 'Get in touch with the SmartToolPicks team for partnerships, sponsorships, or general inquiries.',
+  keywords: ['contact smarttoolpicks', 'saas review partnerships', 'software sponsorship', 'saas content partnership'],
+  alternates: { canonical: `${SITE_URL}/contact` },
+  openGraph: {
+    title: 'Contact SmartToolPicks',
+    description: 'Get in touch with the SmartToolPicks team for partnerships, sponsorships, or general inquiries.',
+    type: 'website',
+    url: `${SITE_URL}/contact`,
+    siteName: SITE_NAME,
+    images: [{ url: '/images/guides/hero-tech-premium.webp', width: 1200, height: 630, alt: 'Contact SmartToolPicks' }],
+  },
+  twitter: { card: 'summary_large_image', site: '@SmartToolPicks' },
 };
 
 export default function ContactPage() {

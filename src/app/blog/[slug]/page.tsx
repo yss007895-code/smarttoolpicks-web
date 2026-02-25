@@ -105,6 +105,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: post.title,
     description: post.excerpt,
+    keywords: ['saas', 'software review', 'productivity tools', post.cat.toLowerCase(), 'smarttoolpicks'],
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -113,6 +114,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       images: [{ url: post.image, width: 1200, height: 630 }],
       siteName: SITE_NAME,
     },
+    twitter: { card: 'summary_large_image', site: '@SmartToolPicks' },
     alternates: { canonical: `${SITE_URL}/blog/${params.slug}` },
   };
 }
@@ -121,7 +123,32 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const post = blogPosts[params.slug];
   if (!post) notFound();
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    image: `${SITE_URL}${post.image}`,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/blog/${post.slug}` },
+  };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog` },
+      { '@type': 'ListItem', position: 3, name: post.cat, item: `${SITE_URL}/blog/${post.slug}` },
+    ],
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
     <article className="pt-8 max-w-3xl mx-auto">
       <nav className="flex items-center gap-2 text-sm text-gray-400 mb-6">
         <Link href="/" className="hover:text-gray-600">Home</Link>
@@ -175,5 +202,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
       <NewsletterCTA />
     </article>
+    </>
   );
 }

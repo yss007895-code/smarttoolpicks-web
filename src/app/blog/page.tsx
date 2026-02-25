@@ -1,11 +1,22 @@
 import Link from 'next/link';
 import SafeImage from '@/components/SafeImage';
 import type { Metadata } from 'next';
+import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Blog — SaaS News, Software Tips & Tool Updates',
   description: 'The latest SaaS news, software tips, and tool updates. Stay informed with product launches, pricing changes, and expert software advice.',
   keywords: ['saas blog', 'software news', 'tool updates 2026', 'saas tips', 'productivity news'],
+  alternates: { canonical: `${SITE_URL}/blog` },
+  openGraph: {
+    title: 'Blog — SaaS News, Software Tips & Tool Updates',
+    description: 'The latest SaaS news, software tips, and tool updates from SmartToolPicks.',
+    type: 'website',
+    url: `${SITE_URL}/blog`,
+    siteName: SITE_NAME,
+    images: [{ url: '/images/guides/hero-tech-premium.webp', width: 1200, height: 630, alt: 'SmartToolPicks Blog' }],
+  },
+  twitter: { card: 'summary_large_image', site: '@SmartToolPicks' },
 };
 
 const posts = [

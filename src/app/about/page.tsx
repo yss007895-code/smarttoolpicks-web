@@ -1,9 +1,21 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'About SmartToolPicks -- Our Mission & Team',
   description: 'SmartToolPicks provides expert saas & software tools guides, honest reviews, and practical advice. Learn about our mission and editorial standards.',
+  keywords: ['about smarttoolpicks', 'saas review experts', 'software tool editorial team', 'independent software reviews', 'saas research team'],
+  alternates: { canonical: `${SITE_URL}/about` },
+  openGraph: {
+    title: 'About SmartToolPicks -- Our Mission & Team',
+    description: 'SmartToolPicks provides expert SaaS and software tool guides, honest reviews, and practical advice.',
+    type: 'website',
+    url: `${SITE_URL}/about`,
+    siteName: SITE_NAME,
+    images: [{ url: '/images/guides/hero-tech-premium.webp', width: 1200, height: 630, alt: 'SmartToolPicks - About Our Team' }],
+  },
+  twitter: { card: 'summary_large_image', site: '@SmartToolPicks' },
 };
 
 export default function AboutPage() {

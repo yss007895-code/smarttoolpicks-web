@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     type: 'website', locale: 'en_US', url: SITE_URL, siteName: SITE_NAME,
     title: 'SmartToolPicks - SaaS Reviews & Software Tool Guides',
     description: 'Expert SaaS reviews, software comparisons, and productivity tool guides to help you pick the right tools for your business.',
+    images: [{ url: '/images/guides/hero-tech-premium.webp', width: 1200, height: 630, alt: 'SmartToolPicks - SaaS Reviews & Software Tool Guides' }],
   },
   twitter: { card: 'summary_large_image', site: '@SmartToolPicks', creator: '@SmartToolPicks' },
   alternates: { canonical: SITE_URL },
