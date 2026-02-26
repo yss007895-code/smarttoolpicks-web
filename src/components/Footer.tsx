@@ -26,17 +26,22 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-semibold text-gray-900 text-sm mb-3">Popular</h4>
             <div className="space-y-2">
-              <Link href="/guides/rise-of-no-code-ai-tools-build-automate" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">No-Code AI Tools</Link>
               <Link href="/guides/best-project-management-tools-2026" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">Project Management</Link>
-              <Link href="/guides/top-crm-software-compared" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">CRM Comparison</Link>
+              <Link href="/guides/zapier-vs-make-2026" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">Zapier vs Make</Link>
+              <Link href="/guides/chatgpt-vs-claude-2026" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">ChatGPT vs Claude</Link>
             </div>
           </div>
           <div>
-            <h4 className="font-display font-semibold text-gray-900 text-sm mb-3">Company</h4>
+            <h4 className="font-display font-semibold text-gray-900 text-sm mb-3">Legal</h4>
             <div className="space-y-2">
               <Link href="/about" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">About</Link>
               <Link href="/contact" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">Contact</Link>
               <Link href="/privacy" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">Terms of Service</Link>
+              <Link href="/disclaimer" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">Disclaimer</Link>
+              <Link href="/affiliate-disclosure" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">Affiliate Disclosure</Link>
+              <Link href="/dmca" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">DMCA Policy</Link>
+              <Link href="/cookie-policy" className="block text-sm text-gray-400 hover:text-gray-600 transition-colors">Cookie Policy</Link>
             </div>
           </div>
         </div>
@@ -44,14 +49,24 @@ export default function Footer() {
         {/* Affiliate Disclosure */}
         <div className="mt-8 p-4 bg-gray-50 rounded-xl border border-gray-100">
           <p className="text-xs text-gray-500 leading-relaxed">
-            <span className="font-semibold">Affiliate Disclosure:</span> SmartToolPicks is a participant in the Amazon Services LLC Associates Program and other affiliate programs. Some links on this site are affiliate links, meaning we may earn a small commission at no extra cost to you when you make a purchase through our links.
+            <span className="font-semibold">Affiliate Disclosure:</span> SmartToolPicks participates in the Amazon Services LLC Associates Program and other affiliate programs. Some links on this site are affiliate links — we may earn a small commission at no extra cost to you when you make a purchase through our links. This does not influence our editorial recommendations.
           </p>
         </div>
 
         <div className="mt-8 pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-400">&copy; {new Date().getFullYear()} SmartToolPicks. All rights reserved.</p>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 flex-wrap justify-center">
             <Link href="/privacy" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">Privacy</Link>
+            <span className="text-gray-200">|</span>
+            <Link href="/terms" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">Terms</Link>
+            <span className="text-gray-200">|</span>
+            <Link href="/affiliate-disclosure" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">Affiliate</Link>
+            <span className="text-gray-200">|</span>
+            <Link href="/disclaimer" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">Disclaimer</Link>
+            <span className="text-gray-200">|</span>
+            <Link href="/dmca" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">DMCA</Link>
+            <span className="text-gray-200">|</span>
+            <Link href="/cookie-policy" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">Cookies</Link>
             <span className="text-gray-200">|</span>
             <Link href="/about" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">About</Link>
           </div>
