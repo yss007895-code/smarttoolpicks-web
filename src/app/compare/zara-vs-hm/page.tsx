@@ -1,13 +1,7 @@
-'use client';
-import { useEffect } from 'react';
+import { redirect } from 'next/navigation';
+
+export const metadata = {};
 
 export default function Page() {
-  useEffect(() => {
-    window.location.replace('/compare/slack-vs-microsoft-teams/');
-  }, []);
-  return (
-    <div className="pt-8 max-w-3xl mx-auto text-center text-gray-400 text-sm">
-      Redirecting...
-    </div>
-  );
+  redirect('/compare/hubspot-vs-mailchimp');
 }

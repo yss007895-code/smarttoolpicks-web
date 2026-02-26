@@ -5,7 +5,7 @@ import { SITE_URL, SITE_NAME } from '@/lib/constants';
 export const metadata: Metadata = {
   title: 'SaaS Tool Comparisons 2026 — Head-to-Head Reviews',
   description: 'Honest head-to-head comparisons of the top SaaS tools. We test, benchmark, and break down Notion vs Asana, ClickUp vs Monday, Slack vs Teams, and more.',
-  keywords: ['saas comparison', 'software comparison 2026', 'notion vs asana', 'clickup vs monday', 'slack vs teams', 'best project management tool', 'saas tool comparison'],
+  keywords: ['saas comparison', 'software comparison 2026', 'notion vs asana', 'clickup vs monday', 'slack vs teams', 'zapier vs make', 'canva vs figma', 'hubspot vs mailchimp', 'saas tool comparison'],
   alternates: { canonical: `${SITE_URL}/compare` },
   openGraph: {
     title: 'SaaS Tool Comparisons 2026 — Head-to-Head Reviews',
@@ -42,6 +42,30 @@ const comparisons = [
     badge: 'Communication',
     winner: 'Depends on stack',
     winnerNote: 'Teams if Microsoft 365',
+  },
+  {
+    slug: 'zapier-vs-make',
+    title: 'Zapier vs Make 2026',
+    desc: 'We built 50+ automations in both tools. Make wins on price and power; Zapier wins on app coverage and ease.',
+    badge: 'Automation',
+    winner: 'Make',
+    winnerNote: 'Best value for power users',
+  },
+  {
+    slug: 'canva-vs-figma',
+    title: 'Canva vs Figma 2026',
+    desc: 'Canva for content creators who need fast results. Figma for designers building real products.',
+    badge: 'Design Tools',
+    winner: 'Depends on role',
+    winnerNote: 'Figma for designers',
+  },
+  {
+    slug: 'hubspot-vs-mailchimp',
+    title: 'HubSpot vs Mailchimp 2026',
+    desc: 'HubSpot is a full CRM with email. Mailchimp is cheaper email-only. The right choice depends on your sales motion.',
+    badge: 'Email Marketing',
+    winner: 'HubSpot',
+    winnerNote: 'Best for CRM + email',
   },
 ];
 
