@@ -1,4 +1,4 @@
-﻿export interface StyleGuide {
+export interface StyleGuide {
   slug: string;
   title: string;
   category: string;
@@ -37,7 +37,7 @@ export const guides: StyleGuide[] = [  {
     readTime: '15 min',
     date: '2026-02-23',
     tag: 'Guide',
-    emoji: '?쨼',
+    emoji: '🤖',
     image: '/images/guides/best-ai-writing-assistants-2026-hero.jpg',
     affiliateProducts: [
       { name: 'Jasper AI Suite', brand: 'Jasper', price: '$99/mo', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/best-ai-writing-assistants-2026-prod0.jpg' },
@@ -54,7 +54,7 @@ export const guides: StyleGuide[] = [  {
     readTime: '12 min',
     date: '2026-02-23',
     tag: 'Guide',
-    emoji: '?뱢',
+    emoji: '📋',
     image: '/images/guides/best-project-management-tools-2026-hero.jpg',
     affiliateProducts: [
       { name: 'Monday.com', brand: 'Monday.com', price: '$12/mo', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/best-project-management-tools-2026-prod0.jpg' },
@@ -65,13 +65,13 @@ export const guides: StyleGuide[] = [  {
   },
   {
     slug: 'best-crm-software-small-business-2026',
-    title: 'The 4 Best CRM Software for Small Business in 2026 (Reviewed & Tested)',
+    title: 'The 4 Best CRM Software for Small Business in 2026 (Reviewed)',
     category: 'productivity',
     description: 'Struggling with messy spreadsheets? We tested the top CRMs to help you manage leads, close deals, and grow your small business. Find your perfect fit now.',
     readTime: '12 min',
     date: '2026-02-23',
     tag: 'Guide',
-    emoji: '?뮲',
+    emoji: '📈',
     image: '/images/guides/best-crm-software-small-business-2026-hero.jpg',
     affiliateProducts: [
       { name: 'HubSpot CRM', brand: 'HubSpot', price: '$0/mo+', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/best-crm-software-small-business-2026-prod0.jpg' },
@@ -82,13 +82,13 @@ export const guides: StyleGuide[] = [  {
   },
   {
     slug: 'ultimate-wfh-desk-setup-guide-2026',
-    title: 'The Ultimate WFH Desk Setup 2026: 4 Essential Tools for Peak Productivity',
+    title: 'Ultimate WFH Desk Setup 2026: 4 Essential Tools for Peak Focus',
     category: 'productivity',
     description: 'Tired of a cluttered WFH space? Discover the 4 essential tools to build your ultimate WFH desk setup for maximum focus and productivity. Get started now!',
     readTime: '12 min',
     date: '2026-02-23',
     tag: 'Guide',
-    emoji: '?뮲',
+    emoji: '🏠',
     image: '/images/guides/ultimate-wfh-desk-setup-guide-2026-hero.jpg',
     affiliateProducts: [
       { name: 'Fully Jarvis Bamboo Standing Desk', brand: 'Fully', price: '$599', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/ultimate-wfh-desk-setup-guide-2026-prod0.jpg' },
@@ -99,13 +99,13 @@ export const guides: StyleGuide[] = [  {
   },
   {
     slug: 'best-email-marketing-platforms-2026',
-    title: 'The 4 Best Email Marketing Platforms of 2026 (Tested & Reviewed for ROI)',
+    title: 'The 4 Best Email Marketing Platforms of 2026 (Tested for ROI)',
     category: 'marketing',
     description: 'Tired of low open rates? We tested the top email marketing software for automation, deliverability, and ROI. Find your perfect platform today.',
     readTime: '12 min',
     date: '2026-02-23',
     tag: 'Guide',
-    emoji: '?뮲',
+    emoji: '📧',
     image: '/images/guides/best-email-marketing-platforms-2026-hero.jpg',
     affiliateProducts: [
       { name: 'ActiveCampaign', brand: 'ActiveCampaign', price: '$29/mo', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/best-email-marketing-platforms-2026-prod0.jpg' },
@@ -122,7 +122,7 @@ export const guides: StyleGuide[] = [  {
     readTime: '12 min',
     date: '2026-02-23',
     tag: 'Guide',
-    emoji: '?뮲',
+    emoji: '🎬',
     image: '/images/guides/best-video-editing-software-2026-hero.jpg',
     affiliateProducts: [
       { name: 'Adobe Premiere Pro', brand: 'Adobe', price: '$22.99/mo', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/best-video-editing-software-2026-prod0.jpg' },
@@ -133,13 +133,13 @@ export const guides: StyleGuide[] = [  {
   },
   {
     slug: 'best-mechanical-keyboards-coders-2026',
-    title: 'The 4 Best Mechanical Keyboards for Coders in 2026 (Boost Your Productivity)',
+    title: 'The 4 Best Mechanical Keyboards for Coders in 2026 (Productivity)',
     category: 'hardware',
     description: 'Tired of mushy keys? We tested the top mechanical keyboards for coders to find the fastest, most ergonomic, and satisfying options. Level up your code.',
     readTime: '12 min',
     date: '2026-02-23',
     tag: 'Guide',
-    emoji: '?뮲',
+    emoji: '⌨️',
     image: '/images/guides/best-mechanical-keyboards-coders-2026-hero.jpg',
     affiliateProducts: [
       { name: 'Keychron Q1 Pro', brand: 'Keychron', price: '$199', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/best-mechanical-keyboards-coders-2026-prod0.jpg' },
@@ -156,7 +156,7 @@ export const guides: StyleGuide[] = [  {
     readTime: '14 min',
     date: '2026-02-23',
     tag: 'Guide',
-    emoji: '?곻툘',
+    emoji: '☁️',
     image: '/images/guides/best-cloud-storage-solutions-2026-hero.jpg',
     affiliateProducts: [
       { name: 'pCloud', brand: 'pCloud', price: '$49.99/yr', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/best-cloud-storage-solutions-2026-prod0.jpg' },
@@ -167,13 +167,13 @@ export const guides: StyleGuide[] = [  {
   },
   {
     slug: 'best-note-taking-apps-productivity-2026',
-    title: 'The 4 Best Note-Taking Apps for Unlocking Peak Productivity (2026 Guide)',
+    title: 'The 4 Best Note-Taking Apps for Unlocking Peak Productivity (2026)',
     category: 'productivity',
     description: 'Tired of scattered notes? We tested the top note-taking apps for organization, collaboration, and focus. Boost your productivity today!',
     readTime: '12 min',
     date: '2026-02-23',
     tag: 'Guide',
-    emoji: '?뱷',
+    emoji: '📝',
     image: '/images/guides/best-note-taking-apps-productivity-2026-hero.jpg',
     affiliateProducts: [
       { name: 'Evernote', brand: 'Evernote', price: '$14.99/mo', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/best-note-taking-apps-productivity-2026-prod0.jpg' },
@@ -184,7 +184,7 @@ export const guides: StyleGuide[] = [  {
   },
   {
     slug: 'best-portable-charger-2026',
-    title: 'The 4 Best Portable Chargers of 2026 (Tested: Real mAh, Speed & Build Quality)',
+    title: 'The 4 Best Portable Chargers of 2026 (Tested: Speed & Build)',
     category: 'hardware',
     description: 'Marketing claims versus real performance. We tested portable chargers for actual capacity, laptop charging speed, and dual-port behavior. Four picks that deliver.',
     readTime: '9 min',
@@ -246,7 +246,7 @@ export const guides: StyleGuide[] = [  {
   },
   {
     slug: 'mailchimp-vs-klaviyo-2026',
-    title: "Mailchimp vs Klaviyo (2026): The Email Marketing Showdown for Ecommerce",
+    title: "Mailchimp vs Klaviyo (2026): The Email Marketing Showdown",
     category: 'marketing',
     description: "Deciding between Mailchimp and Klaviyo in 2026? We compare pricing, automation, and features to help you pick the best email marketing tool for your store.",
     readTime: '12 min',
@@ -291,7 +291,7 @@ export const guides: StyleGuide[] = [  {
   },
   {
     slug: 'zoom-vs-google-meet-2026',
-    title: "Zoom vs Google Meet (2026): Which Video Call Platform Is Actually Better?",
+    title: "Zoom vs Google Meet (2026): Which Video Call Platform Is Better?",
     category: 'productivity',
     description: "Zoom vs Google Meet in 2026: A deep dive comparison of features, AI capabilities, pricing, and performance to help you choose the best video platform.",
     readTime: '12 min',
@@ -516,7 +516,7 @@ export const guides: StyleGuide[] = [  {
   },
   {
     slug: 'best-free-project-management-tools-2026',
-    title: "Best Free Project Management Tools in 2026 (Actually Generous Free Plans)",
+    title: "Best Free Project Management Tools in 2026 (Generous Free Plans)",
     category: 'productivity',
     description: "Stop overpaying for SaaS. We tested the top free project management tools of 2026. Compare ClickUp, Asana, and Trello's actual free limits here.",
     readTime: '12 min',
@@ -606,7 +606,7 @@ export const guides: StyleGuide[] = [  {
   },
   {
     slug: 'grammarly-business-review-2026',
-    title: "Grammarly Business Review 2026: Honest Take After 12 Months of Daily Use",
+    title: "Grammarly Business Review 2026: Honest Take After 12 Months",
     category: 'ai-tools',
     description: "Is Grammarly Business worth the $15/user cost in 2026? After a year of testing, here's our honest review on features, security, and ROI for teams.",
     readTime: '12 min',

@@ -226,13 +226,13 @@ export default function CanvaVsFigma() {
 
           <h2>Which Should You Choose?</h2>
           <p>
-            If your team creates social media graphics, presentations, ads, or marketing materials -- Canva is faster and more accessible. Most marketing teams, content creators, and small businesses belong here.
+            If your team creates social media graphics, presentations, ads, or marketing materials -- Canva is faster and more accessible. Most marketing teams, content creators, and small businesses belong here. For a broader look at free design tools, check our guide on <Link href="/guides/best-free-design-tools-2026" className="text-blue-600 hover:underline">best free design tools in 2026</Link>.
           </p>
           <p>
-            If your team designs products, apps, or websites -- Figma is the industry standard. It integrates with developer workflows, supports proper design systems, and produces files that engineers can actually use.
+            If your team designs products, apps, or websites -- Figma is the industry standard. It integrates with developer workflows, supports proper design systems, and produces files that engineers can actually use. You can read more about <Link href="/guides/design-tool-showdown" className="text-blue-600 hover:underline">Figma vs Adobe Express</Link> in our detailed breakdown.
           </p>
           <p>
-            Many companies use both: Figma for the product team, Canva for marketing. That is a reasonable split if your budget allows.
+            Many companies use both: Figma for the product team, Canva for marketing. That is a reasonable split if your budget allows. If cost is a concern, see our review of <Link href="/guides/canva-pro-review-2026" className="text-blue-600 hover:underline">Canva Pro's value</Link> to decide if the upgrade is worth it.
           </p>
         </div>
 

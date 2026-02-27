@@ -226,13 +226,16 @@ export default function ZapierVsMake() {
 
           <h2>Which Should You Choose?</h2>
           <p>
-            Choose Zapier if you are new to automation, need a specific niche integration, or your team is non-technical and needs minimal setup friction.
+            Choose Zapier if you are new to automation, need a specific niche integration, or your team is non-technical and needs minimal setup friction. See our guide on <Link href="/guides/how-to-automate-workflows-2026" className="text-blue-600 hover:underline">how to automate workflows</Link> for practical examples.
           </p>
           <p>
             Choose Make if you run complex multi-step workflows, want to save money at scale, need advanced data transformation, or you are comfortable with a one-time learning investment.
           </p>
           <p>
-            The honest middle ground: start with Zapier&apos;s free plan, see if it covers your needs, and switch to Make if you hit the pricing wall or need more power. Make&apos;s free tier is generous enough to test your key workflows before committing.
+            The honest middle ground: start with Zapier&apos;s free plan, see if it covers your needs, and switch to Make if you hit the pricing wall or need more power. Make&apos;s free tier is generous enough to test your key workflows before committing. You can also explore <Link href="/guides/no-code-automation" className="text-blue-600 hover:underline">no-code automation trends</Link> to see what else is possible.
+          </p>
+          <p>
+            For a broader look at building without code, check out our guide to <Link href="/guides/how-to-build-no-code-app-2026" className="text-blue-600 hover:underline">building no-code apps</Link>.
           </p>
         </div>
 

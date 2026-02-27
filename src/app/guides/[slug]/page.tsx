@@ -195,7 +195,7 @@ export default function GuideDetailPage({ params }: { params: { slug: string } }
               <div key={idx}>
                 <h2>{section.heading}</h2>
                 {section.paragraphs.map((p, pIdx) => (
-                  <p key={pIdx}>{p}</p>
+                  <p key={pIdx} dangerouslySetInnerHTML={{ __html: p }} />
                 ))}
 
                 {/* Mid-Article CTA after first section — hero with image */}
