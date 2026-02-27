@@ -1,0 +1,21 @@
+
+> smarttoolpicks@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+
+   We detected TypeScript in your project and reconfigured your tsconfig.json file for you. Strict-mode is set to false by default.
+   The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+	- include was updated to add 'docs/types/**/*.ts'
+
+ ✓ Ready in 2.2s
+ ○ Compiling / ...
+ ✓ Compiled / in 6.7s (536 modules)
+ GET / 200 in 7342ms
+ ○ Compiling /methodology ...
+ ✓ Compiled /methodology in 4s (538 modules)
+ GET / 200 in 218ms
