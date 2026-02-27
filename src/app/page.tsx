@@ -89,7 +89,7 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div>
-        {/* Hero â Clean editorial style */}
+        {/* Hero — Clean editorial style */}
         <section className="pt-16 pb-20">
           <p className="text-sm text-gray-400 font-mono tracking-wide uppercase mb-4">
             Your Smart Software Guide
@@ -117,7 +117,7 @@ export default function HomePage() {
         {/* Trending Products */}
         <TrendingProducts />
 
-        {/* Editor's Picks â Top 3 guides */}
+        {/* Editor's Picks — Top 3 guides */}
         <section className="mb-20">
           <div className="flex items-center justify-between mb-6">
             <div>
@@ -142,7 +142,7 @@ export default function HomePage() {
           <NewsletterCTA />
         </section>
 
-        {/* Pinterest Gallery â 4 pins */}
+        {/* Pinterest Gallery — 4 pins */}
         <section className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <div>

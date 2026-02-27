@@ -207,7 +207,7 @@ export default function StyleQuizClient() {
 
           <p className="text-sm text-gray-400 mb-3">Get your full style profile via email:</p>
           <div className="flex gap-2 max-w-sm mx-auto">
-            <input type="email" placeholder="your@email.com" value={email} onChange={e => setEmail(e.target.value)}
+            <input type="email" placeholder="name@company.com" value={email} onChange={e => setEmail(e.target.value)}
               className="flex-1 bg-white border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-gray-400" />
             <button onClick={() => setDone(true)} className="btn-primary text-sm !px-5">Get Results</button>
           </div>

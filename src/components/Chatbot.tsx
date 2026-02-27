@@ -85,7 +85,7 @@ export default function Chatbot() {
           </div>
           <div className="p-3 border-t border-gray-200 dark:border-gray-700">
             <div className="flex gap-2">
-              <input type="text" value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && sendMessage()} placeholder="Ask about SaaS tools..." className="flex-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300" maxLength={500} />
+              <input type="text" value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && sendMessage()} placeholder="Ask about software tools..." className="flex-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300" maxLength={500} />
               <button onClick={sendMessage} disabled={isLoading || !input.trim()} className="px-3 py-2 rounded-lg text-white text-sm font-medium disabled:opacity-50" style={{ backgroundColor: primaryColor }}>Send</button>
             </div>
           </div>

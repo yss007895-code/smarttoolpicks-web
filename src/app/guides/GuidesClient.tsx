@@ -17,7 +17,7 @@ export default function GuidesClient() {
         <p className="text-gray-400 mt-1">{guides.length} expert reviews and comparisons</p>
       </div>
       <div className="flex flex-col sm:flex-row gap-3 mb-6">
-        <input type="text" placeholder="Search guides..." value={search} onChange={e => setSearch(e.target.value)}
+        <input type="text" placeholder="Search software reviews..." value={search} onChange={e => setSearch(e.target.value)}
           className="flex-1 bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-100" />
       </div>
       <div className="flex gap-1 mb-8 overflow-x-auto pb-2 border-b border-gray-100">

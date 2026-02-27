@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-const FALLBACK_IMAGE = '/images/placeholder.webp';
+const FALLBACK_IMAGE = '/images/guides/hero-tech-premium.webp';
 
 interface SafeImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   fallbackSrc?: string;
@@ -30,7 +30,7 @@ export default function SafeImage({
     <img
       {...props}
       src={imgSrc as string}
-      alt={alt || "Image"}
+      alt={alt || "Guide image"}
       onError={handleError}
     />
   );
