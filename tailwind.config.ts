@@ -5,26 +5,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        rose: {
-          50: '#eef2ff', 100: '#e0e7ff', 200: '#c7d2fe', 300: '#a5b4fc',
-          400: '#818cf8', 500: '#6366f1', 600: '#4f46e5', 700: '#4338ca',
-          800: '#3730a3', 900: '#312e81',
-        },
-        blush: {
-          50: '#eef2ff', 100: '#e0e7ff', 200: '#c7d2fe', 300: '#a5b4fc',
-          400: '#818cf8', 500: '#6366f1', 600: '#4f46e5', 700: '#4338ca',
-        },
-        cream: '#f8fafc',
-        champagne: '#f1f5f9',
+        accent: '#6366F1',
+        'accent-hover': '#4F46E5',
+        rating: '#F59E0B',
+        surface: '#F9FAFB',
+        border: '#E5E7EB',
       },
       fontFamily: {
-        display: ['Space Grotesk', 'Inter', 'Helvetica', 'sans-serif'],
-        body: ['Inter', 'Helvetica', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        display: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+        body: ['"Nunito Sans"', 'Helvetica', 'sans-serif'],
+        mono: ['"Space Mono"', 'monospace'],
       },
       animation: {
-        'fade-in': 'fadeIn 0.5s ease-out',
-        'slide-up': 'slideUp 0.4s ease-out',
+        'fade-in': 'fadeIn 0.3s ease-out',
+        'slide-up': 'slideUp 0.3s ease-out',
         'slide-in-bottom': 'slideInBottom 0.3s ease-out',
       },
       keyframes: {
