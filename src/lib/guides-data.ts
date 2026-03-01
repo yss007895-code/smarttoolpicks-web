@@ -40,10 +40,10 @@ export const guides: StyleGuide[] = [  {
     emoji: '🤖',
     image: '/images/guides/best-ai-writing-assistants-2026-hero.webp',
     affiliateProducts: [
-      { name: 'Jasper AI Suite', brand: 'Jasper', price: '$99/mo', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/jasper-ai-suite.webp' },
-      { name: 'Writesonic 7.0', brand: 'Writesonic', price: '$79/mo', url: 'https://amzn.to/example', tag: 'Best for SEO & Long-Form', image: '/images/guides/writesonic-7.0.webp' },
-      { name: 'Copy.ai for Teams', brand: 'Copy.ai', price: '$125/mo', url: 'https://amzn.to/example', tag: 'Best for Marketing Teams', image: '/images/guides/copy.ai-for-teams.webp' },
-      { name: 'Rytr Fusion', brand: 'Rytr', price: '$29/mo', url: 'https://amzn.to/example', tag: 'Best Value', image: '/images/guides/rytr-fusion.webp' },
+      { name: 'Jasper AI Suite', brand: 'Jasper', price: '$99/mo', url: 'https://www.jasper.ai', tag: 'Best Overall', image: '/images/guides/jasper-ai-suite.webp' },
+      { name: 'Writesonic 7.0', brand: 'Writesonic', price: '$79/mo', url: 'https://writesonic.com', tag: 'Best for SEO & Long-Form', image: '/images/guides/writesonic-7.0.webp' },
+      { name: 'Copy.ai for Teams', brand: 'Copy.ai', price: '$125/mo', url: 'https://www.copy.ai', tag: 'Best for Marketing Teams', image: '/images/guides/copy.ai-for-teams.webp' },
+      { name: 'Rytr Fusion', brand: 'Rytr', price: '$29/mo', url: 'https://rytr.me', tag: 'Best Value', image: '/images/guides/rytr-fusion.webp' },
     ],
   },
   {
@@ -57,10 +57,10 @@ export const guides: StyleGuide[] = [  {
     emoji: '📈',
     image: '/images/guides/best-project-management-tools-2026-hero.webp',
     affiliateProducts: [
-      { name: 'Monday.com', brand: 'Monday.com', price: '$12/mo', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/monday.com-pm.webp' },
-      { name: 'ClickUp', brand: 'ClickUp', price: '$7/mo', url: 'https://amzn.to/example', tag: 'Most Customizable', image: '/images/guides/clickup-pm.webp' },
-      { name: 'Asana', brand: 'Asana', price: '$10.99/mo', url: 'https://amzn.to/example', tag: 'Best for Team Collaboration', image: '/images/guides/asana-pm.webp' },
-      { name: 'Trello', brand: 'Atlassian', price: '$5/mo', url: 'https://amzn.to/example', tag: 'Best for Simplicity', image: '/images/guides/trello-pm.webp' },
+      { name: 'Monday.com', brand: 'Monday.com', price: '$12/mo', url: 'https://www.monday.com', tag: 'Best Overall', image: '/images/guides/monday.com-pm.webp' },
+      { name: 'ClickUp', brand: 'ClickUp', price: '$7/mo', url: 'https://clickup.com', tag: 'Most Customizable', image: '/images/guides/clickup-pm.webp' },
+      { name: 'Asana', brand: 'Asana', price: '$10.99/mo', url: 'https://asana.com', tag: 'Best for Team Collaboration', image: '/images/guides/asana-pm.webp' },
+      { name: 'Trello', brand: 'Atlassian', price: '$5/mo', url: 'https://trello.com', tag: 'Best for Simplicity', image: '/images/guides/trello-pm.webp' },
     ],
   },
   {
@@ -74,10 +74,10 @@ export const guides: StyleGuide[] = [  {
     emoji: '💻',
     image: '/images/guides/best-crm-software-small-business-2026-hero.webp',
     affiliateProducts: [
-      { name: 'HubSpot CRM', brand: 'HubSpot', price: '$0/mo+', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/hubspot-crm-brand.webp' },
-      { name: 'Zoho CRM', brand: 'Zoho', price: '$14/mo', url: 'https://amzn.to/example', tag: 'Best Value', image: '/images/guides/zoho-crm-brand.webp' },
-      { name: 'Freshsales', brand: 'Freshworks', price: '$15/mo', url: 'https://amzn.to/example', tag: 'Best for Sales Automation', image: '/images/guides/freshsales-brand.webp' },
-      { name: 'Pipedrive', brand: 'Pipedrive', price: '$14.90/mo', url: 'https://amzn.to/example', tag: 'Best for Pipeline Management', image: '/images/guides/pipedrive-brand.webp' },
+      { name: 'HubSpot CRM', brand: 'HubSpot', price: '$0/mo+', url: 'https://www.hubspot.com', tag: 'Best Overall', image: '/images/guides/hubspot-crm-brand.webp' },
+      { name: 'Zoho CRM', brand: 'Zoho', price: '$14/mo', url: 'https://www.zoho.com/crm', tag: 'Best Value', image: '/images/guides/zoho-crm-brand.webp' },
+      { name: 'Freshsales', brand: 'Freshworks', price: '$15/mo', url: 'https://www.freshworks.com/crm/sales', tag: 'Best for Sales Automation', image: '/images/guides/freshsales-brand.webp' },
+      { name: 'Pipedrive', brand: 'Pipedrive', price: '$14.90/mo', url: 'https://www.pipedrive.com', tag: 'Best for Pipeline Management', image: '/images/guides/pipedrive-brand.webp' },
     ],
   },
   {
@@ -91,10 +91,10 @@ export const guides: StyleGuide[] = [  {
     emoji: '💻',
     image: '/images/guides/ultimate-wfh-desk-setup-guide-2026-hero.webp',
     affiliateProducts: [
-      { name: 'Fully Jarvis Bamboo Standing Desk', brand: 'Fully', price: '$599', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/fully-jarvis-bamboo-desk.webp' },
-      { name: 'Herman Miller Aeron Chair', brand: 'Herman Miller', price: '$1,805', url: 'https://amzn.to/example', tag: 'Best for Ergonomics', image: '/images/guides/herman-miller-aeron.webp' },
-      { name: 'Dell UltraSharp U2723QE Monitor', brand: 'Dell', price: '$625', url: 'https://amzn.to/example', tag: 'Best for Visuals', image: '/images/guides/dell-ultrasharp-u2723qe.webp' },
-      { name: 'Shure MV7 Podcast Microphone', brand: 'Shure', price: '$249', url: 'https://amzn.to/example', tag: 'Best for Communication', image: '/images/guides/shure-mv7.webp' },
+      { name: 'Fully Jarvis Bamboo Standing Desk', brand: 'Fully', price: '$599', url: 'https://www.amazon.com/s?k=Fully+Jarvis+Bamboo+Standing+Desk&tag=smarttoolpicks-20', tag: 'Best Overall', image: '/images/guides/fully-jarvis-bamboo-desk.webp' },
+      { name: 'Herman Miller Aeron Chair', brand: 'Herman Miller', price: '$1,805', url: 'https://www.amazon.com/s?k=Herman+Miller+Aeron+Chair&tag=smarttoolpicks-20', tag: 'Best for Ergonomics', image: '/images/guides/herman-miller-aeron.webp' },
+      { name: 'Dell UltraSharp U2723QE Monitor', brand: 'Dell', price: '$625', url: 'https://www.amazon.com/s?k=Dell+UltraSharp+U2723QE+Monitor&tag=smarttoolpicks-20', tag: 'Best for Visuals', image: '/images/guides/dell-ultrasharp-u2723qe.webp' },
+      { name: 'Shure MV7 Podcast Microphone', brand: 'Shure', price: '$249', url: 'https://www.amazon.com/s?k=Shure+MV7+Podcast+Microphone&tag=smarttoolpicks-20', tag: 'Best for Communication', image: '/images/guides/shure-mv7.webp' },
     ],
   },
   {
@@ -108,10 +108,10 @@ export const guides: StyleGuide[] = [  {
     emoji: '💻',
     image: '/images/guides/best-email-marketing-platforms-2026-hero.webp',
     affiliateProducts: [
-      { name: 'ActiveCampaign', brand: 'ActiveCampaign', price: '$29/mo', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/activecampaign-brand.webp' },
-      { name: 'ConvertKit', brand: 'ConvertKit', price: '$9/mo', url: 'https://amzn.to/example', tag: 'Best for Creators', image: '/images/guides/convertkit-brand.webp' },
-      { name: 'Klaviyo', brand: 'Klaviyo', price: '$35/mo', url: 'https://amzn.to/example', tag: 'Best for E-commerce', image: '/images/guides/klaviyo-brand.webp' },
-      { name: 'Brevo (formerly Sendinblue)', brand: 'Brevo', price: '$0/mo (Free Plan)', url: 'https://amzn.to/example', tag: 'Best Free Plan', image: '/images/guides/brevo-formerly-sendinblue.webp' },
+      { name: 'ActiveCampaign', brand: 'ActiveCampaign', price: '$29/mo', url: 'https://www.activecampaign.com', tag: 'Best Overall', image: '/images/guides/activecampaign-brand.webp' },
+      { name: 'ConvertKit', brand: 'ConvertKit', price: '$9/mo', url: 'https://convertkit.com', tag: 'Best for Creators', image: '/images/guides/convertkit-brand.webp' },
+      { name: 'Klaviyo', brand: 'Klaviyo', price: '$35/mo', url: 'https://www.klaviyo.com', tag: 'Best for E-commerce', image: '/images/guides/klaviyo-brand.webp' },
+      { name: 'Brevo (formerly Sendinblue)', brand: 'Brevo', price: '$0/mo (Free Plan)', url: 'https://www.brevo.com', tag: 'Best Free Plan', image: '/images/guides/brevo-formerly-sendinblue.webp' },
     ],
   },
   {
@@ -125,10 +125,10 @@ export const guides: StyleGuide[] = [  {
     emoji: '💻',
     image: '/images/guides/best-video-editing-software-2026-hero.webp',
     affiliateProducts: [
-      { name: 'Adobe Premiere Pro', brand: 'Adobe', price: '$22.99/mo', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/adobe-premiere-pro-brand.webp' },
-      { name: 'Final Cut Pro', brand: 'Apple', price: '$299.99', url: 'https://amzn.to/example', tag: 'Best for Mac', image: '/images/guides/final-cut-pro-brand.webp' },
-      { name: 'DaVinci Resolve', brand: 'Blackmagic Design', price: 'Free / $295', url: 'https://amzn.to/example', tag: 'Best Free Option', image: '/images/guides/davinci-resolve-brand.webp' },
-      { name: 'Descript', brand: 'Descript', price: '$15/mo', url: 'https://amzn.to/example', tag: 'Best for Creators', image: '/images/guides/descript-brand.webp' },
+      { name: 'Adobe Premiere Pro', brand: 'Adobe', price: '$22.99/mo', url: 'https://www.adobe.com/products/premiere.html', tag: 'Best Overall', image: '/images/guides/adobe-premiere-pro-brand.webp' },
+      { name: 'Final Cut Pro', brand: 'Apple', price: '$299.99', url: 'https://www.apple.com/final-cut-pro/', tag: 'Best for Mac', image: '/images/guides/final-cut-pro-brand.webp' },
+      { name: 'DaVinci Resolve', brand: 'Blackmagic Design', price: 'Free / $295', url: 'https://www.blackmagicdesign.com/products/davinciresolve', tag: 'Best Free Option', image: '/images/guides/davinci-resolve-brand.webp' },
+      { name: 'Descript', brand: 'Descript', price: '$15/mo', url: 'https://www.descript.com', tag: 'Best for Creators', image: '/images/guides/descript-brand.webp' },
     ],
   },
   {
@@ -142,10 +142,10 @@ export const guides: StyleGuide[] = [  {
     emoji: '💻',
     image: '/images/guides/best-mechanical-keyboards-coders-2026-hero.webp',
     affiliateProducts: [
-      { name: 'Keychron Q1 Pro', brand: 'Keychron', price: '$199', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/keychron-q1-pro.webp' },
-      { name: 'ZSA Moonlander Mark I', brand: 'ZSA', price: '$365', url: 'https://amzn.to/example', tag: 'Best Ergonomic', image: '/images/guides/zsa-moonlander.webp' },
-      { name: 'HHKB Professional Hybrid Type-S', brand: 'HHKB', price: '$322', url: 'https://amzn.to/example', tag: 'Best Compact', image: '/images/guides/hhkb-professional.webp' },
-      { name: 'Royal Kludge RK61', brand: 'Royal Kludge', price: '$50', url: 'https://amzn.to/example', tag: 'Best Budget', image: '/images/guides/royal-kludge-rk61.webp' },
+      { name: 'Keychron Q1 Pro', brand: 'Keychron', price: '$199', url: 'https://www.amazon.com/s?k=Keychron+Q1+Pro&tag=smarttoolpicks-20', tag: 'Best Overall', image: '/images/guides/keychron-q1-pro.webp' },
+      { name: 'ZSA Moonlander Mark I', brand: 'ZSA', price: '$365', url: 'https://www.amazon.com/s?k=ZSA+Moonlander+Mark+I&tag=smarttoolpicks-20', tag: 'Best Ergonomic', image: '/images/guides/zsa-moonlander.webp' },
+      { name: 'HHKB Professional Hybrid Type-S', brand: 'HHKB', price: '$322', url: 'https://www.amazon.com/s?k=HHKB+Professional+Hybrid+Type-S&tag=smarttoolpicks-20', tag: 'Best Compact', image: '/images/guides/hhkb-professional.webp' },
+      { name: 'Royal Kludge RK61', brand: 'Royal Kludge', price: '$50', url: 'https://www.amazon.com/s?k=Royal+Kludge+RK61&tag=smarttoolpicks-20', tag: 'Best Budget', image: '/images/guides/royal-kludge-rk61.webp' },
     ],
   },
   {
@@ -159,10 +159,10 @@ export const guides: StyleGuide[] = [  {
     emoji: '☁️',
     image: '/images/guides/best-cloud-storage-solutions-2026-hero.webp',
     affiliateProducts: [
-      { name: 'pCloud', brand: 'pCloud', price: '$49.99/yr', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/pcloud-brand.webp' },
-      { name: 'Sync.com', brand: 'Sync.com', price: '$8/mo', url: 'https://amzn.to/example', tag: 'Best for Security', image: '/images/guides/sync-com-brand.webp' },
-      { name: 'Google Drive', brand: 'Google', price: '$9.99/mo', url: 'https://amzn.to/example', tag: 'Best for Collaboration', image: '/images/guides/google-drive-brand.webp' },
-      { name: 'Microsoft OneDrive', brand: 'Microsoft', price: '$6.99/mo', url: 'https://amzn.to/example', tag: 'Best for Windows/Office Users', image: '/images/guides/microsoft-onedrive-brand.webp' },
+      { name: 'pCloud', brand: 'pCloud', price: '$49.99/yr', url: 'https://www.pcloud.com', tag: 'Best Overall', image: '/images/guides/pcloud-brand.webp' },
+      { name: 'Sync.com', brand: 'Sync.com', price: '$8/mo', url: 'https://www.sync.com', tag: 'Best for Security', image: '/images/guides/sync-com-brand.webp' },
+      { name: 'Google Drive', brand: 'Google', price: '$9.99/mo', url: 'https://www.google.com/drive/', tag: 'Best for Collaboration', image: '/images/guides/google-drive-brand.webp' },
+      { name: 'Microsoft OneDrive', brand: 'Microsoft', price: '$6.99/mo', url: 'https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage', tag: 'Best for Windows/Office Users', image: '/images/guides/microsoft-onedrive-brand.webp' },
     ],
   },
   {
@@ -176,10 +176,10 @@ export const guides: StyleGuide[] = [  {
     emoji: '📝',
     image: '/images/guides/best-note-taking-apps-productivity-2026-hero.webp',
     affiliateProducts: [
-      { name: 'Evernote', brand: 'Evernote', price: '$14.99/mo', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/evernote-brand.webp' },
-      { name: 'Notion', brand: 'Notion', price: '$10/mo', url: 'https://amzn.to/example', tag: 'Best for Teams', image: '/images/guides/notion-brand.webp' },
-      { name: 'Obsidian', brand: 'Obsidian', price: '$8/mo', url: 'https://amzn.to/example', tag: 'Best for Power Users', image: '/images/guides/obsidian-brand.webp' },
-      { name: 'Microsoft OneNote', brand: 'Microsoft', price: '$0/mo', url: 'https://amzn.to/example', tag: 'Best Free Option', image: '/images/guides/microsoft-onenote-brand.webp' },
+      { name: 'Evernote', brand: 'Evernote', price: '$14.99/mo', url: 'https://evernote.com', tag: 'Best Overall', image: '/images/guides/evernote-brand.webp' },
+      { name: 'Notion', brand: 'Notion', price: '$10/mo', url: 'https://www.notion.so', tag: 'Best for Teams', image: '/images/guides/notion-brand.webp' },
+      { name: 'Obsidian', brand: 'Obsidian', price: '$8/mo', url: 'https://obsidian.md', tag: 'Best for Power Users', image: '/images/guides/obsidian-brand.webp' },
+      { name: 'Microsoft OneNote', brand: 'Microsoft', price: '$0/mo', url: 'https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app', tag: 'Best Free Option', image: '/images/guides/microsoft-onenote-brand.webp' },
     ],
   },
 
@@ -775,10 +775,10 @@ export const guides: StyleGuide[] = [  {
     emoji: '⚡',
     image: '/images/guides/best-portable-charger-2026-hero.webp',
     affiliateProducts: [
-      { name: 'Anker 737 Power Bank 24000mAh 140W', brand: 'Anker', price: '$109', url: 'https://amzn.to/example', tag: 'Best Overall', image: '/images/guides/anker-737-power-bank.webp' },
-      { name: 'Baseus Blade 2 20000mAh 65W', brand: 'Baseus', price: '$59', url: 'https://amzn.to/example', tag: 'Best for Laptop Users', image: '/images/guides/baseus-blade-2.webp' },
-      { name: 'Zendure SuperMini 10000mAh 45W', brand: 'Zendure', price: '$44', url: 'https://amzn.to/example', tag: 'Best for Travel Light', image: '/images/guides/zendure-supermini.webp' },
-      { name: 'INIU 27000mAh 65W Power Bank', brand: 'INIU', price: '$49', url: 'https://amzn.to/example', tag: 'Best Budget Capacity', image: '/images/guides/iniu-power-bank.webp' },
+      { name: 'Anker 737 Power Bank 24000mAh 140W', brand: 'Anker', price: '$109', url: 'https://www.amazon.com/s?k=Anker+737+Power+Bank+24000mAh+140W&tag=smarttoolpicks-20', tag: 'Best Overall', image: '/images/guides/anker-737-power-bank.webp' },
+      { name: 'Baseus Blade 2 20000mAh 65W', brand: 'Baseus', price: '$59', url: 'https://www.amazon.com/s?k=Baseus+Blade+2+20000mAh+65W&tag=smarttoolpicks-20', tag: 'Best for Laptop Users', image: '/images/guides/baseus-blade-2.webp' },
+      { name: 'Zendure SuperMini 10000mAh 45W', brand: 'Zendure', price: '$44', url: 'https://www.amazon.com/s?k=Zendure+SuperMini+10000mAh+45W&tag=smarttoolpicks-20', tag: 'Best for Travel Light', image: '/images/guides/zendure-supermini.webp' },
+      { name: 'INIU 27000mAh 65W Power Bank', brand: 'INIU', price: '$49', url: 'https://www.amazon.com/s?k=INIU+27000mAh+65W+Power+Bank&tag=smarttoolpicks-20', tag: 'Best Budget Capacity', image: '/images/guides/iniu-power-bank.webp' },
     ],
   },
 
