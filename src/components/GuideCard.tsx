@@ -4,9 +4,9 @@ import type { StyleGuide } from '@/lib/guides-data';
 
 export default function GuideCard({ guide }: { guide: StyleGuide }) {
   return (
-    <Link href={`/guides/${guide.slug}`} className="card-hover block group overflow-hidden">
+    <Link href={`/guides/${guide.slug}`} className="card-hover block group p-4">
       {guide.image && (
-        <div className="relative h-48 overflow-hidden bg-surface">
+        <div className="relative h-48 overflow-hidden bg-surface-muted rounded-lg mb-4">
           <SafeImage
             src={guide.image}
             alt={guide.title}
@@ -15,13 +15,13 @@ export default function GuideCard({ guide }: { guide: StyleGuide }) {
             className="object-cover group-hover:scale-105 transition-transform duration-500"
           />
           <div className="absolute top-3 left-3">
-            <span className="text-xs font-display font-bold text-brand-purple bg-white/95 backdrop-blur-sm px-3 py-1.5 rounded-lg shadow-sm">
+            <span className="text-xs font-display font-semibold text-brand-purple bg-white px-3 py-1 rounded-full">
               {guide.tag}
             </span>
           </div>
         </div>
       )}
-      <div className="p-5">
+      <div>
         <h3 className="font-display font-bold text-brand-ink group-hover:text-brand-purple transition-colors mb-2 leading-snug">
           {guide.title}
         </h3>
@@ -36,7 +36,7 @@ export default function GuideCard({ guide }: { guide: StyleGuide }) {
               </>
             )}
           </div>
-          <span className="text-xs font-display font-semibold text-brand-purple opacity-0 group-hover:opacity-100 transition-opacity">
+          <span className="text-xs font-display font-semibold text-brand-orange opacity-0 group-hover:opacity-100 transition-opacity">
             Read &rarr;
           </span>
         </div>

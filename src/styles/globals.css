@@ -2,52 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap');
 
 @layer base {
   body {
-    @apply bg-surface-white text-brand-ink font-body;
+    @apply bg-surface text-brand-ink font-body;
   }
   ::selection {
-    @apply bg-brand-purple/20 text-brand-purple;
+    @apply bg-brand-purple/15 text-brand-purple;
   }
 }
 
 @layer components {
   .card {
-    @apply bg-white rounded-2xl border border-surface-border;
+    @apply bg-white rounded-lg border border-surface-border;
   }
   .card-hover {
-    @apply card hover:border-brand-purple/30 hover:shadow-xl hover:shadow-brand-purple/5 transition-all duration-200;
+    @apply bg-transparent hover:bg-white transition-colors duration-200 rounded-lg;
   }
   .btn-primary {
-    @apply bg-brand-purple text-white font-display font-semibold px-6 py-3 rounded-xl hover:bg-brand-purple-dark transition-colors duration-200;
+    @apply bg-brand-purple text-white font-display font-semibold px-6 py-3 rounded-full hover:bg-brand-purple-dark transition-colors duration-200;
   }
   .btn-secondary {
-    @apply bg-white border-2 border-surface-border text-brand-ink font-display font-medium px-6 py-3 rounded-xl hover:bg-surface hover:border-brand-purple/30 transition-all duration-200;
+    @apply bg-white border border-surface-border text-brand-ink font-display font-medium px-6 py-3 rounded-full hover:border-brand-purple/30 hover:bg-surface transition-all duration-200;
   }
   .badge {
-    @apply inline-flex items-center px-3 py-1 rounded-lg text-xs font-display font-semibold;
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-display font-semibold;
   }
   .badge-new {
     @apply badge bg-brand-purple-light text-brand-purple;
   }
   .badge-hot {
-    @apply badge bg-amber-50 text-amber-700;
+    @apply badge bg-orange-50 text-brand-orange;
   }
   .badge-category {
     @apply badge bg-surface-muted text-brand-slate border border-surface-border;
   }
   .section-title {
-    @apply font-display text-2xl sm:text-3xl font-bold text-brand-ink tracking-tight;
+    @apply font-display text-3xl sm:text-4xl font-black text-brand-ink tracking-tight leading-tight;
   }
 
   /* Product card */
   .product-card {
-    @apply bg-white rounded-2xl border border-surface-border overflow-hidden transition-all duration-200;
+    @apply bg-white rounded-lg border border-surface-border overflow-hidden transition-all duration-200;
   }
   .product-card:hover {
-    @apply border-brand-purple/30 shadow-xl shadow-brand-purple/5;
+    @apply border-brand-purple/20 shadow-lg;
   }
   .product-card:hover .product-card-action {
     @apply opacity-100;
@@ -59,7 +59,7 @@
     @apply font-mono text-gray-400 line-through text-sm;
   }
   .urgency-text {
-    @apply text-xs text-brand-purple font-display font-semibold;
+    @apply text-xs text-brand-orange font-display font-semibold;
   }
 
   /* Tabs */
@@ -78,13 +78,13 @@
     @apply font-display text-xl font-semibold text-brand-slate mt-8 mb-3;
   }
   .prose-style p {
-    @apply text-gray-600 leading-relaxed mb-4 text-[16px];
+    @apply text-gray-600 leading-[1.7] mb-4 text-[16px];
   }
   .prose-style a {
     @apply text-brand-purple hover:text-brand-purple-dark underline underline-offset-2 decoration-brand-purple/30 hover:decoration-brand-purple;
   }
   .prose-style blockquote {
-    @apply border-l-4 border-brand-purple/30 bg-brand-purple-light/50 px-6 py-4 rounded-r-2xl my-6;
+    @apply border-l-4 border-brand-orange/40 bg-surface-muted px-6 py-4 rounded-r-lg my-6;
   }
   .prose-style table {
     @apply w-full border-collapse mb-6;
@@ -98,7 +98,7 @@
 
   /* Tool score badge */
   .tool-score {
-    @apply inline-flex items-center justify-center w-11 h-11 rounded-xl bg-brand-purple text-white font-display font-bold text-sm;
+    @apply inline-flex items-center justify-center w-11 h-11 rounded-lg bg-brand-purple text-white font-display font-bold text-sm;
   }
 }
 
@@ -122,7 +122,7 @@ html {
 }
 
 .skip-link {
-  @apply absolute -top-10 left-4 bg-brand-purple text-white px-4 py-2 rounded-b-xl z-[100] text-sm font-display font-semibold;
+  @apply absolute -top-10 left-4 bg-brand-purple text-white px-4 py-2 rounded-b-lg z-[100] text-sm font-display font-semibold;
   transition: top 0.2s;
 }
 .skip-link:focus {

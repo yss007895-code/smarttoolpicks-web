@@ -97,16 +97,16 @@ export default function BlogPage() {
 
   return (
     <div className="pt-8 max-w-4xl mx-auto">
-      <div className="mb-10">
-        <h1 className="section-title">The Brief</h1>
-        <p className="text-gray-400 mt-1">Software insights, honest reviews, and tool analysis</p>
+      <div className="mb-12">
+        <h1 className="font-display text-4xl font-black text-brand-ink tracking-tight">The Brief</h1>
+        <p className="text-brand-slate mt-2">Software insights, honest reviews, and tool analysis</p>
       </div>
 
       {/* Featured Post */}
-      <Link href={featured.link} className="block group mb-12">
-        <div className="card-hover overflow-hidden rounded-xl">
+      <Link href={featured.link} className="block group mb-14">
+        <div className="overflow-hidden rounded-lg">
           {featured.image && (
-            <div className="relative h-64 sm:h-80 overflow-hidden">
+            <div className="relative h-64 sm:h-80 overflow-hidden bg-surface-muted rounded-lg">
               <SafeImage
                 src={featured.image}
                 alt={featured.title}
@@ -115,70 +115,67 @@ export default function BlogPage() {
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute top-4 left-4">
-                <span className="text-[11px] font-medium text-white bg-black/50 backdrop-blur-sm px-2.5 py-1 rounded-full">
+                <span className="text-xs font-display font-semibold text-white bg-brand-orange px-3 py-1 rounded-full">
                   {featured.cat}
                 </span>
               </div>
             </div>
           )}
-          <div className="p-6">
-            <div className="flex items-center gap-3 text-xs text-gray-400 mb-3">
+          <div className="py-6">
+            <div className="flex items-center gap-3 text-xs text-gray-400 font-display mb-3">
               <span>{featured.date}</span>
-              <span>·</span>
+              <span>&middot;</span>
               <span>{featured.time} read</span>
             </div>
-            <h2 className="font-display text-2xl font-bold text-gray-900 group-hover:text-gray-600 transition-colors mb-3 leading-snug">
+            <h2 className="font-display text-2xl sm:text-3xl font-black text-brand-ink group-hover:text-brand-purple transition-colors mb-3 leading-snug tracking-tight">
               {featured.title}
             </h2>
-            <p className="text-gray-400 leading-relaxed">{featured.excerpt}</p>
+            <p className="text-brand-slate leading-relaxed">{featured.excerpt}</p>
           </div>
         </div>
       </Link>
 
-      {/* Post Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* Post Grid — 3 columns like Zapier */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {rest.map(p => (
-          <Link key={p.slug} href={p.link} className="card-hover block group overflow-hidden rounded-xl">
+          <Link key={p.slug} href={p.link} className="block group p-3 rounded-lg hover:bg-white transition-colors">
             {p.image && (
-              <div className="relative h-44 overflow-hidden">
+              <div className="relative h-40 overflow-hidden bg-surface-muted rounded-lg mb-4">
                 <SafeImage
                   src={p.image}
                   alt={p.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, 400px"
+                  sizes="(max-width: 768px) 100vw, 300px"
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute top-3 left-3">
-                  <span className="text-[10px] font-medium text-white bg-black/50 backdrop-blur-sm px-2 py-0.5 rounded-full">
+                <div className="absolute top-2 left-2">
+                  <span className="text-[10px] font-display font-semibold text-white bg-brand-orange px-2.5 py-0.5 rounded-full">
                     {p.cat}
                   </span>
                 </div>
               </div>
             )}
-            <div className="p-5">
-              <div className="flex items-center gap-2 text-xs text-gray-400 mb-2">
+            <div>
+              <div className="flex items-center gap-2 text-xs text-gray-400 font-display mb-2">
                 <span>{p.date}</span>
-                <span>·</span>
-                <span>{p.time} read</span>
+                <span>&middot;</span>
+                <span>{p.time}</span>
               </div>
-              <h3 className="font-display font-bold text-gray-900 group-hover:text-gray-600 transition-colors mb-2 leading-snug">
+              <h3 className="font-display font-bold text-brand-ink group-hover:text-brand-purple transition-colors mb-2 leading-snug text-sm">
                 {p.title}
               </h3>
-              <p className="text-sm text-gray-400 line-clamp-2">{p.excerpt}</p>
+              <p className="text-xs text-brand-slate line-clamp-2">{p.excerpt}</p>
             </div>
           </Link>
         ))}
       </div>
 
-      {/* Newsletter CTA */}
-      <div className="mt-16 border border-gray-100 rounded-xl p-8 text-center bg-white">
-        <h3 className="font-display text-xl font-bold text-gray-900 mb-2">Stay in the Loop</h3>
-        <p className="text-gray-400 text-sm mb-6">New reviews and tool picks delivered every Thursday.</p>
-        <div className="max-w-md mx-auto">
-          <p className="text-sm text-blue-500 font-medium">Coming soon</p>
-          <p className="text-xs text-gray-400 mt-2">Subscribe feature launching shortly.</p>
-        </div>
-        <p className="text-[11px] text-gray-400 mt-3">No spam. Unsubscribe anytime.</p>
+      {/* Newsletter CTA — Zapier-style horizontal bar */}
+      <div className="mt-16 bg-brand-purple rounded-lg p-8 text-center text-white">
+        <h3 className="font-display text-xl font-bold mb-2">Stay in the Loop</h3>
+        <p className="text-white/70 text-sm mb-4">New reviews and tool picks delivered every Thursday.</p>
+        <div className="text-sm text-brand-orange font-semibold">Coming soon</div>
+        <p className="text-[11px] text-white/50 mt-3">No spam. Unsubscribe anytime.</p>
       </div>
     </div>
   );

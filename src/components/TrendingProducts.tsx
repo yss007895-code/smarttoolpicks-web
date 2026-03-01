@@ -48,10 +48,10 @@ export default function TrendingProducts() {
 
   return (
     <section className="mb-20">
-      <div className="flex items-center justify-between mb-6">
+      <div className="flex items-center justify-between mb-8">
         <h2 className="section-title">Today&apos;s Picks</h2>
-        <a href="/shop" className="text-sm text-accent hover:text-accent-hover font-medium transition-colors">
-          View all
+        <a href="/shop" className="text-sm text-brand-orange hover:text-brand-purple font-display font-semibold transition-colors">
+          View all &rarr;
         </a>
       </div>
       {/* Vertical list */}
@@ -65,11 +65,11 @@ export default function TrendingProducts() {
               href={p.url}
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
-              className="flex items-center gap-4 sm:gap-5 p-4 bg-white border border-border rounded-2xl hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all group"
+              className="flex items-center gap-4 sm:gap-5 p-4 bg-white border border-surface-border rounded-lg hover:border-brand-purple/20 hover:shadow-md transition-all group"
             >
               {/* Tool icon / image */}
               {p.image ? (
-                <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 bg-surface rounded-xl overflow-hidden">
+                <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 bg-surface-muted rounded-lg overflow-hidden">
                   <SafeImage
                     src={p.image}
                     alt={p.name}
@@ -79,7 +79,7 @@ export default function TrendingProducts() {
                   />
                 </div>
               ) : (
-                <div className="w-14 h-14 sm:w-16 sm:h-16 shrink-0 bg-surface rounded-xl flex items-center justify-center">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 shrink-0 bg-surface-muted rounded-lg flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-gray-300"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 7h10"/><path d="M7 12h10"/><path d="M7 17h6"/></svg>
                 </div>
               )}
@@ -87,10 +87,10 @@ export default function TrendingProducts() {
               {/* Name + description + category */}
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <h3 className="font-display font-bold text-[#1F2937] group-hover:text-accent transition-colors text-sm sm:text-base leading-snug line-clamp-1">
+                  <h3 className="font-display font-bold text-brand-ink group-hover:text-brand-purple transition-colors text-sm sm:text-base leading-snug line-clamp-1">
                     {p.name}
                   </h3>
-                  <span className="shrink-0 text-[10px] font-medium text-accent bg-accent/10 px-2 py-0.5 rounded-full">
+                  <span className="shrink-0 text-[10px] font-medium text-brand-purple bg-brand-purple-light px-2 py-0.5 rounded-full">
                     {category}
                   </span>
                 </div>
@@ -99,7 +99,7 @@ export default function TrendingProducts() {
 
               {/* Price */}
               <div className="shrink-0 text-right hidden sm:block">
-                <span className="font-mono font-bold text-sm text-[#1F2937]">{p.price}</span>
+                <span className="font-mono font-bold text-sm text-brand-ink">{p.price}</span>
               </div>
 
               {/* Rating stars */}
