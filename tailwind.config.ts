@@ -5,16 +5,30 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        accent: '#6366F1',
-        'accent-hover': '#4F46E5',
-        rating: '#F59E0B',
-        surface: '#F9FAFB',
-        border: '#E5E7EB',
+        brand: {
+          purple: '#7c3aed',
+          'purple-dark': '#6d28d9',
+          'purple-light': '#ede9fe',
+          blue: '#2563eb',
+          'blue-light': '#dbeafe',
+          ink: '#0f172a',
+          slate: '#334155',
+        },
+        surface: {
+          DEFAULT: '#f8fafc',
+          white: '#ffffff',
+          muted: '#f1f5f9',
+          border: '#e2e8f0',
+          'border-dark': '#cbd5e1',
+        },
+        rating: '#f59e0b',
+        accent: '#7c3aed',
+        'accent-hover': '#6d28d9',
       },
       fontFamily: {
-        display: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
-        body: ['"Nunito Sans"', 'Helvetica', 'sans-serif'],
-        mono: ['"Space Mono"', 'monospace'],
+        display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+        body: ['"Inter"', 'system-ui', 'sans-serif'],
+        mono: ['"Fira Code"', 'monospace'],
       },
       animation: {
         'fade-in': 'fadeIn 0.3s ease-out',

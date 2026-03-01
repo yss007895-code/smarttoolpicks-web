@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
       </head>
-      <body className="min-h-screen bg-white text-[#1F2937] antialiased font-body">
+      <body className="min-h-screen bg-surface-white text-brand-ink antialiased font-body">
         <a href="#main-content" className="skip-link">Skip to content</a>
         <script
           type="application/ld+json"

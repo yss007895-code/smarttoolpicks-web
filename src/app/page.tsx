@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { guides } from '@/lib/guides-data';
+import { guides, categories } from '@/lib/guides-data';
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from '@/lib/constants';
 import GuideCard from '@/components/GuideCard';
 import NewsletterCTA from '@/components/NewsletterCTA';
@@ -9,13 +9,14 @@ import AdUnit from '@/components/AdUnit';
 
 export default function HomePage() {
   const inDepthReviews = guides.slice(0, 3);
+  const latestReviews = guides.slice(3, 9);
 
   const categoryChips = [
-    { label: 'AI Writing', href: '/guides/best-ai-writing-assistants-2026' },
-    { label: 'CRM', href: '/guides/best-crm-software-small-business-2026' },
-    { label: 'Design', href: '/guides/best-design-tools-2026' },
-    { label: 'Productivity', href: '/guides/best-project-management-tools-2026' },
-    { label: 'Dev Tools', href: '/guides/best-developer-tools-2026' },
+    { label: 'AI Writing', href: '/guides/best-ai-writing-assistants-2026', icon: '&#9889;' },
+    { label: 'CRM', href: '/guides/best-crm-software-small-business-2026', icon: '&#128202;' },
+    { label: 'Design', href: '/guides/best-design-tools-2026', icon: '&#127912;' },
+    { label: 'Productivity', href: '/guides/best-project-management-tools-2026', icon: '&#9889;' },
+    { label: 'Dev Tools', href: '/guides/best-developer-tools-2026', icon: '&#128187;' },
   ];
 
   const organizationJsonLd = {
@@ -89,36 +90,44 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <div>
-        {/* Hero — Clean, centered, Product Hunt style */}
-        <section className="py-16 sm:py-20 text-center">
-          <h1 className="font-display text-[2.2rem] sm:text-[2.8rem] font-bold text-[#1F2937] leading-tight tracking-tight">
-            Find your next favorite tool.
+        {/* Hero — Bold Verge-style */}
+        <section className="py-16 sm:py-24 text-center relative">
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-purple-light/40 via-transparent to-transparent -z-10 rounded-3xl"></div>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-brand-purple-light text-brand-purple text-sm font-display font-semibold rounded-lg mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            Trusted by 50,000+ readers
+          </div>
+          <h1 className="font-display text-[2.5rem] sm:text-[3.5rem] font-bold text-brand-ink leading-[1.1] tracking-tight max-w-3xl mx-auto">
+            Find your next{' '}
+            <span className="bg-gradient-to-r from-brand-purple to-brand-blue bg-clip-text text-transparent">
+              favorite tool.
+            </span>
           </h1>
-          <p className="text-lg text-gray-500 mt-3 max-w-lg mx-auto">
+          <p className="text-lg text-brand-slate mt-5 max-w-xl mx-auto">
             Expert SaaS reviews, software comparisons, and productivity guides to help you work smarter.
           </p>
 
-          {/* Prominent search bar */}
+          {/* Search bar */}
           <div className="mt-8 max-w-xl mx-auto">
             <div className="relative">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
               <input
                 type="text"
                 placeholder="Search for tools, categories, or reviews..."
-                className="w-full pl-12 pr-6 py-4 text-base bg-white border-2 border-border rounded-2xl focus:outline-none focus:border-accent focus:ring-4 focus:ring-accent/10 shadow-sm transition-all"
+                className="w-full pl-12 pr-6 py-4 text-base bg-white border-2 border-surface-border rounded-2xl focus:outline-none focus:border-brand-purple focus:ring-4 focus:ring-brand-purple/10 shadow-lg shadow-brand-purple/5 transition-all"
               />
             </div>
           </div>
         </section>
 
-        {/* Category Chips — horizontal scroll */}
-        <div className="mb-10 -mx-4 px-4 overflow-x-auto">
+        {/* Category Navigation — pill chips */}
+        <div className="mb-12 -mx-4 px-4 overflow-x-auto">
           <div className="flex gap-2 min-w-max pb-2">
             {categoryChips.map(chip => (
               <Link
                 key={chip.label}
                 href={chip.href}
-                className="px-5 py-2 bg-surface text-gray-600 font-display font-medium text-sm rounded-full border border-border hover:border-accent hover:text-accent hover:bg-accent/5 transition-all whitespace-nowrap"
+                className="px-5 py-2.5 bg-white text-brand-slate font-display font-medium text-sm rounded-xl border-2 border-surface-border hover:border-brand-purple hover:text-brand-purple hover:bg-brand-purple-light/50 transition-all whitespace-nowrap"
               >
                 {chip.label}
               </Link>
@@ -127,26 +136,42 @@ export default function HomePage() {
         </div>
 
         {/* Ad */}
-        <AdUnit slot="8863913673" format="horizontal" className="mb-8" />
+        <AdUnit slot="8863913673" format="horizontal" className="mb-10" />
 
-        {/* Today's Picks — Vertical list */}
+        {/* Today's Top Picks */}
         <TrendingProducts />
 
-        {/* In-Depth Reviews */}
-        <section className="mb-20">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="section-title">In-Depth Reviews</h2>
-            <Link href="/guides" className="text-sm text-accent hover:text-accent-hover font-medium transition-colors">
-              View all
+        {/* Featured Reviews */}
+        <section className="mb-16">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h2 className="section-title">Featured Reviews</h2>
+              <p className="text-sm text-brand-slate mt-1 font-display">Deep dives into the tools that matter</p>
+            </div>
+            <Link href="/guides" className="text-sm text-brand-purple hover:text-brand-purple-dark font-display font-semibold transition-colors">
+              View all &rarr;
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {inDepthReviews.map(g => <GuideCard key={g.slug} guide={g} />)}
           </div>
         </section>
 
+        {/* Latest Reviews */}
+        <section className="mb-16">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="section-title">Latest Reviews</h2>
+            <Link href="/guides" className="text-sm text-brand-purple hover:text-brand-purple-dark font-display font-semibold transition-colors">
+              See all &rarr;
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {latestReviews.map(g => <GuideCard key={g.slug} guide={g} />)}
+          </div>
+        </section>
+
         {/* Ad */}
-        <AdUnit slot="8863913673" format="horizontal" className="mb-8" />
+        <AdUnit slot="8863913673" format="horizontal" className="mb-10" />
 
         {/* Shop by Category */}
         <ShopByCategory />
