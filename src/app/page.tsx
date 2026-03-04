@@ -12,11 +12,10 @@ export default function HomePage() {
   const latestReviews = guides.slice(3, 9);
 
   const categoryChips = [
-    { label: 'AI Writing', href: '/guides/best-ai-writing-assistants-2026', icon: '&#9889;' },
-    { label: 'CRM', href: '/guides/best-crm-software-small-business-2026', icon: '&#128202;' },
-    { label: 'Design', href: '/guides/best-design-tools-2026', icon: '&#127912;' },
-    { label: 'Productivity', href: '/guides/best-project-management-tools-2026', icon: '&#9889;' },
-    { label: 'Dev Tools', href: '/guides/best-developer-tools-2026', icon: '&#128187;' },
+    { label: 'AI Tools', href: '/guides/best-ai-writing-tools-2026', icon: '&#9889;' },
+    { label: 'Productivity', href: '/guides/top-project-management-apps-2026', icon: '&#128202;' },
+    { label: 'Developer Tools', href: '/guides/best-code-editors-2026', icon: '&#128187;' },
+    { label: 'Smart Gadgets', href: '/guides/smart-home-gadgets-worth-buying-2026', icon: '&#127912;' },
   ];
 
   const organizationJsonLd = {

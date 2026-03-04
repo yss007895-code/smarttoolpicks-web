@@ -20,28 +20,24 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-semibold text-white text-xs uppercase tracking-wider mb-4">Explore</h4>
             <div className="space-y-2.5">
-              <Link href="/shop" className="block text-sm text-gray-400 hover:text-white transition-colors">Browse Tools</Link>
               <Link href="/guides" className="block text-sm text-gray-400 hover:text-white transition-colors">Reviews</Link>
-              <Link href="/blog" className="block text-sm text-gray-400 hover:text-white transition-colors">Blog</Link>
-              <Link href="/style-quiz" className="block text-sm text-gray-400 hover:text-white transition-colors">Tool Finder</Link>
+              <Link href="/about" className="block text-sm text-gray-400 hover:text-white transition-colors">About</Link>
             </div>
           </div>
           <div>
             <h4 className="font-display font-semibold text-white text-xs uppercase tracking-wider mb-4">Popular</h4>
             <div className="space-y-2.5">
-              <Link href="/guides/best-ai-writing-assistants-2026" className="block text-sm text-gray-400 hover:text-white transition-colors">AI Writing Tools</Link>
-              <Link href="/guides/best-project-management-tools-2026" className="block text-sm text-gray-400 hover:text-white transition-colors">Project Management</Link>
-              <Link href="/guides/best-crm-software-small-business-2026" className="block text-sm text-gray-400 hover:text-white transition-colors">CRM Software</Link>
+              <Link href="/guides/best-ai-writing-tools-2026" className="block text-sm text-gray-400 hover:text-white transition-colors">AI Writing Tools</Link>
+              <Link href="/guides/top-project-management-apps-2026" className="block text-sm text-gray-400 hover:text-white transition-colors">Project Management</Link>
+              <Link href="/guides/best-crm-software-2026" className="block text-sm text-gray-400 hover:text-white transition-colors">CRM Software</Link>
             </div>
           </div>
           <div>
             <h4 className="font-display font-semibold text-white text-xs uppercase tracking-wider mb-4">Company</h4>
             <div className="space-y-2.5">
               <Link href="/about" className="block text-sm text-gray-400 hover:text-white transition-colors">About</Link>
-              <Link href="/contact" className="block text-sm text-gray-400 hover:text-white transition-colors">Contact</Link>
               <Link href="/privacy" className="block text-sm text-gray-400 hover:text-white transition-colors">Privacy</Link>
-              <Link href="/terms" className="block text-sm text-gray-400 hover:text-white transition-colors">Terms</Link>
-              <Link href="/affiliate-disclosure" className="block text-sm text-gray-400 hover:text-white transition-colors">Affiliate Disclosure</Link>
+              <Link href="/disclaimer" className="block text-sm text-gray-400 hover:text-white transition-colors">Disclaimer</Link>
             </div>
           </div>
         </div>

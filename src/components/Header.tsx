@@ -7,10 +7,9 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const links = [
-    { href: '/shop', label: 'Tools' },
     { href: '/guides', label: 'Reviews' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/compare', label: 'Compare' },
+    { href: '/about', label: 'About' },
+    { href: '/disclaimer', label: 'Disclosure' },
   ];
 
   const isActive = (href: string) => {
@@ -52,8 +51,8 @@ export default function Header() {
 
           {/* CTA + mobile */}
           <div className="flex items-center gap-3 shrink-0">
-            <Link href="/style-quiz" className="hidden sm:block bg-brand-orange text-white text-sm font-display font-semibold px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity">
-              Submit a Tool
+            <Link href="/guides" className="hidden sm:block bg-brand-orange text-white text-sm font-display font-semibold px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity">
+              Discover Smart Tools
             </Link>
             <button
               onClick={() => setOpen(!open)}
@@ -88,8 +87,8 @@ export default function Header() {
               </Link>
             ))}
             <div className="px-4 mt-3">
-              <Link href="/style-quiz" className="block bg-brand-orange text-white text-sm font-display font-semibold text-center px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity">
-                Submit a Tool
+              <Link href="/guides" className="block bg-brand-orange text-white text-sm font-display font-semibold text-center px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity">
+                Discover Smart Tools
               </Link>
             </div>
           </nav>
