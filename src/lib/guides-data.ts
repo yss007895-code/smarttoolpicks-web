@@ -3,6 +3,8 @@
    Types, sample guides, categories, and helper functions.
    ----------------------------------------------------------------------- */
 
+import { phase6Guides } from './guides-data-phase6';
+
 // ---------- Types ----------
 
 export interface AffiliateProduct {
@@ -537,6 +539,7 @@ export const guides: StyleGuide[] = [
       },
     ],
   },
+  ...phase6Guides,
 ];
 
 // ---------- Helper Functions ----------

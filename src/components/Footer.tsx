@@ -42,6 +42,16 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Our Network */}
+        <div className="mt-10 pt-8 border-t border-white/10">
+          <h4 className="font-display font-semibold text-white text-xs uppercase tracking-wider mb-4">Our Network</h4>
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <a href="https://securechoiceguide.com" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">SecureChoiceGuide</a>
+            <a href="https://stylemedaily.org" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">StyleMeDaily</a>
+            <a href="https://trendloopusa.net" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">TrendLoop USA</a>
+          </div>
+        </div>
+
         {/* Affiliate Disclosure */}
         <div className="mt-10 p-4 bg-white/5 border border-white/10 rounded-lg">
           <p className="text-xs text-gray-500 leading-relaxed">
